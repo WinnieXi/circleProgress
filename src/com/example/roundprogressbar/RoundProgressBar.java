@@ -15,8 +15,11 @@ import com.example.circlepregress.R;
 
 /**
  * 仿iphone带进度的进度条，线程安全的View，可直接在线程中更新进度
- * @author xiaanming
+ * @author xuchangbin
  *
+ * @update 2014-08-29 
+ * 增加了 MIDDLE 方式， 目前的方案是设置圆形的渐变背景，<br/>
+ * 然后roundColor设为透明的，在 onDraw再画上小圆，形成外层的圆环。
  */
 public class RoundProgressBar extends View {
     /**
